@@ -207,13 +207,13 @@ a{
     text-align: center;
 }
 
-.notice img {
-    margin-top: 15px;
+.notice img {    
     width: 120px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    margin: 15px auto;    
 }
 
 .notice img:hover {

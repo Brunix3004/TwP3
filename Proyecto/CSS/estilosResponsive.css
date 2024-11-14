@@ -107,7 +107,13 @@
     /* PARTE CONTACTO */
 
     .formulario {
-        width: 90%;
+        width: fit-content;
+    }
+    form {
+        width: fit-content;
+    }
+    input{
+        width: 75%;
     }
     .sedes{
         display: flex;
@@ -115,6 +121,9 @@
         margin: 0 auto;
         justify-content: center;
         align-items: center;
+    }
+    .sede {
+        width: fit-content;
     }
 
     /* PARTE PODCAST */

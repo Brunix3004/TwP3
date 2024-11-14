@@ -24,7 +24,7 @@
             </div>
         </div>
         
-        <div class="body">
+        <div class="body"> 
             <div class="column navegador">
                 <nav>
                     <ul class="menu">
@@ -72,9 +72,11 @@
                             <p class="autor-noticia">Autor: Pablo Romero</p>
                             <p class="ambito">Ámbito: Nacional</p>
                         </div>
-                        <div class="imagen-noticia">
+                        <picture class="imagen-noticia">
+                            <source media="(width <= 480px)" srcset="/Imagenes/Noticias/mundoPodcast.webp">
+                            <source media="(width > 480px)"  srcset="/Imagenes/Noticias/podcast.webp">
                             <img src="/Imagenes/Noticias/podcast.webp" alt="Imagen de la noticia 1" class="imagen-header">
-                        </div>    
+                        </picture>
                     </header>
                     <div class="cuerpo-noticia">
                         <p>El propio Ministerio de Cultura otorga ayudas de impulso al sector, por tercer año consecutivo, y cuya convocatoria se anunciará en octubre.</p>
@@ -229,7 +231,7 @@
                     Canal de comunicación público adscrita a la UMH dirigida por estudiantes de comunicación y marketing.
                     Su objetivo es promover una mayor vinculacion entre la comunidad universitaria y la sociedad.
                 </p>
-            </div>
+            </div> 
             <div class="footer-column validaciones">
                 <div class="validadores">
                     <div class="validadores-css">
