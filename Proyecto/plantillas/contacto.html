@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="/CSS/estilosInfografia.css">
+    <link rel="stylesheet" href="/CSS/estilosResponsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search">
+    <title>Contacto</title>
+</head> 
+<body>  
+    <div class="container">
+        <div class="header">
+            <div class="header-column-left">
+                <h1>Radio UMH</h1>
+                <h2>Lo mejor esta por escucharse</h2> 
+            </div>
+            <div class="header-column">
+                <input type="text" class="search-input" name="buscador" id="buscador" placeholder="Buscar">
+                <button class="search-button" onclick="buscador()">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
+        </div> 
+        
+        <div class="body">
+            <div class="column navegador">
+                <nav>
+                    <ul class="menu">
+                        <li class="actual"><a href="/index.html">Inicio</a></li>                    
+                        <li><a href="/plantillas/noticias.html">Noticias</a></li>
+                        <li><a href="/plantillas/contacto.html">Contacto</a></li>
+                        <li>
+                            <a href="/plantillas/podcast.html">Podcast</a>
+                            <ul class="submenu">
+                                <li><a href="/plantillas/podcast.html#ciencia">Ciencias</a></li>
+                                <li><a href="/plantillas/podcast.html#actualidad">Actualidad</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="column">
+                <section>
+                    <h2>Formulario de contacto</h2>
+                    <div class="formulario">
+                        <form onsubmit="enviarCorreo(); return false" autocomplete="on">
+                            <div class="elemento">
+                                <label for="nombre">Nombres<span class="obligatorio">*</span></label>
+                                <input type="text"  id="nombre" name="nombre" placeholder="Ingrese sus nombres" required="required">
+                            </div>
+                            <div class="elemento">
+                                <label for="apellido1">Apellido 1<span class="obligatorio">*</span></label>
+                                <input type="text" name="apellido1" id="apellido1" placeholder="Ingresa tu primer apellido" required="required">
+                            </div>
+                            <div class="elemento">
+                                <label for="apellido2">Apellido 2</label>
+                                <input type="text" name="apellido2" id="apellido2" placeholder="Ingresa tu segundo apellido">
+                            </div>
+                            <div class="elemento">
+                                <label for="edad">Edad<span class="obligatorio">*</span></label>
+                                <input type="number" min="18" max="100" name="edad" id="edad" required="required">
+                            </div>
+                            <div class="elemento">
+                                <label for="asunto">Asunto<span class="obligatorio">*</span></label>
+                                <input type="text" name="asunto" id="asunto" placeholder="Motivo de contacto" required="required">
+                            </div>
+                            <div class="elemento">
+                                <label for="mail">Mail<span class="obligatorio">*</span></label>
+                                <input type="email" name="mail" id="mail" placeholder="example@correo.com" required="required">
+                            </div>
+                            <div class="elemento">
+                                <label for="dni">DNI<span class="obligatorio">*</span></label>
+                                <input type="text" name="dni" id="dni" placeholder="Ejemplo: 12345678A" required="required" pattern="^[0-9]{8}[A-Z]$" title="Debe contener 8 dígitos seguidos de una letra mayúscula.">
+                            </div>
+                            <div class="elemento">
+                                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento">
+                            </div>
+                            <button id="send" type="submit">Send</button>
+                            <button id="limpar" type="reset" onclick="borrar()">Clear</button>
+                        </form>
+                    </div>
+                </section>
+                <section>
+                    <h2>Visitanos en nuestras siguientes sedes</h2>
+                    <div class="sedes">
+                        <div class="sede">
+                            <p>Sede Elche</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25056.954090625437!2d-0.7075366490892371!3d38.27672818247888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63b6636b528c97%3A0x1ec7ad33555888ab!2sUniversidad%20Miguel%20Hern%C3%A1ndez!5e0!3m2!1ses-419!2ses!4v1731238293056!5m2!1ses-419!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="sede">
+                            <p>Sede Altea</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3118.119775566819!2d-0.06266713142396203!3d38.600113318071685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62017db076b7b1%3A0x4735fc84676123b0!2sUMH%20-%20Campus%20de%20Altea!5e0!3m2!1ses-419!2ses!4v1731238386761!5m2!1ses-419!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="column infografia">
+                <h2 class="infoh2">Brainstorming</h2>
+                <div class="contenedor">                    
+                    <div class="elementos">
+                        <div class="caja">
+                            <div class="info">
+                                <h3>1. Brief</h3>
+                                <p>Parrafo 1</p> 
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/brief.png" alt="Brief">
+                            </div>
+                        </div>
+        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>2. Brainstorming</h3>
+                                <p>Parrafo 2</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/brainstorming.png" alt="brainstorming">
+                            </div>
+                        </div>
+        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>3. Sketch</h3>
+                                <p>Parrafo 3</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/sketch.png" alt="sketch">
+                            </div>
+                        </div>
+                        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>4. Solution</h3>
+                                <p>Parrafo 4</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/solution.png" alt="solution">
+                            </div>
+                        </div>
+        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>5. Design</h3>
+                                <p>Parrafo 5</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/design.png" alt="design">
+                            </div>
+                        </div>
+                        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>6. Revision</h3>
+                                <p>Parrafo 5</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/revision.png" alt="revision">
+                            </div>
+                        </div>
+        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>7. Presentation</h3>
+                                <p>Parrafo 7</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/presentation.png" alt="presentation">
+                            </div>
+                        </div>
+                        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>8. Deliver</h3>
+                                <p>Parrafo 8</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/deliver.png" alt="deliver">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="footer">
+            <div class="footer-column">
+                <p class="nombre">Jordi Wild</p>
+                <p>
+                    Es un youtuber, podcaster y celebridad de internet español.
+                    Creador del canal de Youtube El Rincón de Giorgio que cuenta con 12 millones de suscriptores.
+                </p>
+                <p class="nombre">Radio UMH</p>
+                <p>
+                    Canal de comunicación público adscrita a la UMH dirigida por estudiantes de comunicación y marketing.
+                    Su objetivo es promover una mayor vinculacion entre la comunidad universitaria y la sociedad.
+                </p>
+            </div>
+            <div class="footer-column validaciones">
+                <div class="validadores">
+                    <div class="validadores-css">
+                        <div class="validador">
+                            <p>Validacion estilos.css</p>
+                            <p>
+                                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                                    <img style="border:0;width:88px;height:31px"
+                                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                        alt="¡CSS Válido!">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="validador">
+                            <p>Validacion estilosInfografia.css</p>
+                            <p>
+                                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                                    <img style="border:0;width:88px;height:31px"
+                                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                        alt="¡CSS Válido!">
+                                </a>
+                            </p>
+                        </div>                                     
+                    </div>
+                    <div class="validadores-html">
+                        <div class="validador">
+                            <p>Validador index.html</p>
+                            <img src="/Imagenes/Validaciones/validacionIndexHtml.png" alt="Validacion Index">
+                        </div>
+                        <div class="validador">
+                            <p>Validador contacto.html</p>
+                            <img src="/Imagenes/Validaciones/validacionIContactoHtml.png" alt="Validacion Index">
+                        </div>
+                        <div class="validador">
+                            <p>Validador noticias.html</p>
+                            <img src="/Imagenes/Validaciones/validacionNoticiasHtml.png" alt="Validacion Index">
+                        </div>
+                        <div class="validador">
+                            <p>Validador podcast.html</p>
+                            <img src="/Imagenes/Validaciones/validacionPodcastHtml.png" alt="Validacion Index">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-column footer-column-center">                
+                <div class="imagenes">                    
+                    <a href="https://www.facebook.com/MundoChampionsUMH" target="_blank">
+                        <img src="/Imagenes/logoFacebook.png" alt="Logo Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/radio_umh/" target="_blank">
+                        <img src="/Imagenes/logoInstagram.png" alt="Logo Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/JS/funcionalidades.js"></script>
+</body>
+</html>

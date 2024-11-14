@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="/CSS/estilosInfografia.css">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=star_rate">
+    <link rel="stylesheet" href="/CSS/estilosResponsive.css">
+    <title>Podcast Umh</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-column-left">
+                <h1>Radio UMH</h1>
+                <h2>Lo mejor esta por escucharse</h2>
+            </div> 
+            <div class="header-column">
+                <input type="text" class="search-input" name="buscador" id="buscador" placeholder="Buscar">
+                <button class="search-button" onclick="buscador()">
+                    <img src="/Imagenes/Herramientas/search.png" alt="Search">
+                </button>
+            </div>
+        </div>
+         
+        <div class="body">
+            <div class="column navegador">
+                <nav>
+                    <ul class="menu">
+                        <li class="actual"><a href="/index.html">Inicio</a></li>                    
+                        <li><a href="/plantillas/noticias.html">Noticias</a></li>
+                        <li><a href="/plantillas/contacto.html">Contacto</a></li>
+                        <li>
+                            <a href="/plantillas/podcast.html">Podcast</a>
+                            <ul class="submenu">
+                                <li><a href="/plantillas/podcast.html#ciencia">Ciencias</a></li>
+                                <li><a href="/plantillas/podcast.html#actualidad">Actualidad</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="column"> 
+                <section id="ciencia"> 
+                    <h2>Ciencia</h2>
+                    <div class="contenedor-podcasts">
+                        <div class="caja-podcast">
+                            <div class="cabecera">
+                                <img src="/Imagenes/Podcasts/ciencia.png" alt="Logo CIencia">
+                                <p>Episodio en Ciencia</p>
+                            </div>
+                            <div class="cuerpo">
+                                <p class="titulo-podcast">Contraste de fases</p>
+                                <p class="autores-podcast">Elaborado por Saceda Sánchez, Luis Pérez y Pilar García.</p>
+                            </div>                            
+                            <div class="info-podcast">
+                                <p class="duracion">29:22</p>
+                                <p class="popularidad">Popular</p>
+                            </div>
+                            <hr>
+                            <div class="detalles">
+                                <div class="ratio">
+                                    <span class="material-symbols-outlined icon"> star_rate </span>
+                                    <p>5</p>
+                                </div>                                
+                                <div class="modalidad">
+                                    <img src="/Imagenes/Herramientas/lock.png" alt="Lock">
+                                    <p>Premium</p>
+                                </div>
+                            </div>
+                            <div class="reproductor">
+                                <a href="/plantillas/podcast.html" onclick="mostrarMensaje()">No disponible</a>
+                            </div>
+                        </div>
+
+                        <div class="caja-podcast">
+                            <div class="cabecera">
+                                <img src="/Imagenes/Podcasts/ciencia.png" alt="Logo CIencia">
+                                <p>Episodio en Ciencia</p>
+                            </div>
+                            <div class="cuerpo">
+                                <p class="titulo-podcast">La salud al dia</p>
+                                <p class="autores-podcast">Elaborado por Ildefonso Hernández y Sergio Morales.</p>
+                            </div>
+                            <div class="info-podcast">
+                                <p class="duracion">30:20</p>
+                                <!-- <p class="popularidad">Trending</p> -->
+                            </div>
+                            <hr>
+                            <div class="detalles">
+                                <div class="ratio">
+                                    <span class="material-symbols-outlined icon"> star_rate </span>
+                                    <p>3.5</p>
+                                </div>                                
+                                <!-- <div class="modalidad">
+                                    <span class="material-symbols-outlined"> lock </span>
+                                    <p>Premium</p>
+                                </div> -->
+                            </div>
+                            <div class="reproductor">
+                                <img src="/Imagenes/Herramientas/play_circle.png" alt="Play Circle">
+                                <a href="https://radio.umh.es/2024/10/29/el-proyecto-diseno-e-implementacion-de-estrategias-cocreadas-con-la-participacion-de-ciudadania-en-salud-al-dia-29-de-octubre-de-2024/" target="_blank">Reproducir</a>
+                            </div>
+                        </div>
+
+                        <div class="caja-podcast">
+                            <div class="cabecera">
+                                <img src="/Imagenes/Podcasts/ciencia.png" alt="Logo Ciencia">
+                                <p>Episodio en Ciencia</p>
+                            </div>
+                            <div class="cuerpo">
+                                <p class="titulo-podcast">Talento y Salud</p>
+                                <p class="autores-podcast">Dirigido por Adrián García Selva.</p>
+                            </div>
+                            <div class="info-podcast">
+                                <p class="duracion">1:11:14</p>
+                                <p class="popularidad">Popular</p>
+                            </div>
+                            <hr>
+                            <div class="detalles">
+                                <div class="ratio">
+                                    <span class="material-symbols-outlined icon"> star_rate </span>
+                                    <p>4</p>
+                                </div>                                
+                                <!-- <div class="modalidad">
+                                    <span class="material-symbols-outlined"> lock </span>
+                                    <p>Premium</p>
+                                </div> -->
+                            </div>
+                            <div class="reproductor">
+                                <img src="/Imagenes/Herramientas/play_circle.png" alt="Play circle">
+                                <a href="https://radio.umh.es/2024/11/05/inclusion-laboral-de-las-personas-en-riesgo-de-exclusion-en-talento-y-salud-5-de-noviembre-de-2024/" target="_blank">Reproducir</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="actualidad">
+                    <h2>Actualidad</h2>
+                    <div class="contenedor-podcasts">
+                        <div class="caja-podcast">
+                            <div class="cabecera">
+                                <img src="/Imagenes/Podcasts/actualidad.jpg" alt="Logo Actualidad">
+                                <p>Episodio en Actualidad</p>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="apartado-titulo">
+                                    <p class="titulo-podcast">Informativos UMH</p>                                                                
+                                </div>
+                                <div class="apartado-autores">
+                                    <p class="autores-podcast">Presentado por Daniel Abellán y Marta Llorca.</p>                        
+                                </div>
+                            </div>                            
+                            <div class="info-podcast">
+                                <p class="duracion">11:15</p>
+                                <p class="popularidad">Popular</p>
+                            </div>
+                            <hr>
+                            <div class="detalles">
+                                <div class="ratio">
+                                    <span class="material-symbols-outlined icon"> star_rate </span>
+                                    <p>5</p>
+                                </div>                                
+                                <!-- <div class="modalidad">
+                                    <img src="/Imagenes/Herramientas/lock.png" alt="Lock">
+                                    <p>Premium</p>
+                                </div> -->
+                            </div>
+                            <div class="reproductor">
+                                <img src="/Imagenes/Herramientas/play_circle.png" alt="Play Circle">
+                                <a href="https://radio.umh.es/2024/11/08/el-proyecto-microrrelatos-sonoros-ilustrados-en-informativos-umh-8-de-noviembre-de-2024/" target="_blank"> Reproducir </a>
+                            </div>
+                        </div>
+
+                        <div class="caja-podcast">
+                            <div class="cabecera">
+                                <img src="/Imagenes/Podcasts/actualidad.jpg" alt="Logo Actualidad">
+                                <p>Episodio en Actualidad</p>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="apartado-titulo">
+                                    <p class="titulo-podcast">Lactancia y Universidad</p>
+                                </div>
+                                <div class="apartado-autores">
+                                    <p class="autores-podcast">Presentado por Anaís Ferrández y Joel Costa.</p>
+                                </div>                                                                
+                            </div>
+                            <div class="info-podcast">
+                                <p class="duracion">52:32</p>
+                                <p class="popularidad">Popular</p>
+                            </div>
+                            <hr>
+                            <div class="detalles">
+                                <div class="ratio">
+                                    <span class="material-symbols-outlined icon"> star_rate </span>
+                                    <p>3.5</p>
+                                </div>                                
+                                <!-- <div class="modalidad">
+                                    <span class="material-symbols-outlined"> lock </span>
+                                    <p>Premium</p>
+                                </div> -->
+                            </div>
+                            <div class="reproductor">
+                                <img src="/Imagenes/Herramientas/play_circle.png" alt="Play Circle">
+                                <a href="https://radio.umh.es/2024/10/21/la-custodia-en-ninos-lactantes-con-ana-pacheco-en-lactancia-y-universidad-21-de-octubre-de-2023/" target="_blank">Reproducir</a>
+                            </div>
+                        </div>
+
+                        <div class="caja-podcast">
+                            <div class="cabecera">
+                                <img src="/Imagenes/Podcasts/actualidad.jpg" alt="Logo Actualidad">
+                                <p>Episodio en Actualidad</p>
+                            </div>
+                            <div class="cuerpo">
+                                <div class="apartado-titulo">
+                                    <p class="titulo-podcast">Una ventana a la innovación</p>
+                                </div>
+                                <div class="apartado-autores">
+                                    <p class="autores-podcast">Dirigido por Alejandro Linde y Carolina Rueda.</p>
+                                </div>
+                            </div>
+                            <div class="info-podcast">
+                                <p class="duracion">47:48</p>
+                                <p class="popularidad">Popular</p>
+                            </div>
+                            <hr>
+                            <div class="detalles">
+                                <div class="ratio">
+                                    <span class="material-symbols-outlined icon"> star_rate </span>
+                                    <p>4</p>
+                                </div>                                
+                                <!-- <div class="modalidad">
+                                    <span class="material-symbols-outlined"> lock </span>
+                                    <p>Premium</p>
+                                </div> -->
+                            </div>
+                            <div class="reproductor">
+                                <img src="/Imagenes/Herramientas/play_circle.png" alt="Play circle">
+                                <a href="https://radio.umh.es/2024/10/28/abiertas-las-inscripciones-para-la-14a-maraton-umh-y-repaso-del-tercer-congreso-de-economia-circular-conecoo-en-una-ventana-a-la-innovacion-28-de-octubre-de-2024/" target="_blank">Reproducir</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="column infografia">
+                <h2 class="infoh2">Brainstorming</h2>
+                <div class="contenedor">                    
+                    <div class="elementos">
+                        <div class="caja">
+                            <div class="info">
+                                <h3>1. Brief</h3>
+                                <p>Parrafo 1</p> 
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/brief.png" alt="Brief">
+                            </div>
+                        </div>
+        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>2. Brainstorming</h3>
+                                <p>Parrafo 2</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/brainstorming.png" alt="brainstorming">
+                            </div>
+                        </div>
+        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>3. Sketch</h3>
+                                <p>Parrafo 3</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/sketch.png" alt="sketch">
+                            </div>
+                        </div>
+                        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>4. Solution</h3>
+                                <p>Parrafo 4</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/solution.png" alt="solution">
+                            </div>
+                        </div>
+        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>5. Design</h3>
+                                <p>Parrafo 5</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/design.png" alt="design">
+                            </div>
+                        </div>
+                        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>6. Revision</h3>
+                                <p>Parrafo 5</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/revision.png" alt="revision">
+                            </div>
+                        </div>
+        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>7. Presentation</h3>
+                                <p>Parrafo 7</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/presentation.png" alt="presentation">
+                            </div>
+                        </div>
+                        
+                        <div class="caja">
+                            <div class="info">
+                                <h3>8. Deliver</h3>
+                                <p>Parrafo 8</p>
+                            </div>
+                            <div class="imagen">
+                                <img src="/Imagenes/infografia/deliver.png" alt="deliver">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div> 
+        </div>
+            
+        <div class="footer">
+            <div class="footer-column">
+                <p class="nombre">Jordi Wild</p>
+                <p>
+                    Es un youtuber, podcaster y celebridad de internet español.
+                    Creador del canal de Youtube El Rincón de Giorgio que cuenta con 12 millones de suscriptores.
+                </p>
+                <p class="nombre">Radio UMH</p>
+                <p>
+                    Canal de comunicación público adscrita a la UMH dirigida por estudiantes de comunicación y marketing.
+                    Su objetivo es promover una mayor vinculacion entre la comunidad universitaria y la sociedad.
+                </p>
+            </div>
+            <div class="footer-column validaciones">
+                <div class="validadores">
+                    <div class="validadores-css">
+                        <div class="validador">
+                            <p>Validacion estilos.css</p>
+                            <p>
+                                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                                    <img style="border:0;width:88px;height:31px"
+                                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                        alt="¡CSS Válido!">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="validador">
+                            <p>Validacion estilosInfografia.css</p>
+                            <p>
+                                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                                    <img style="border:0;width:88px;height:31px"
+                                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                        alt="¡CSS Válido!">
+                                </a>
+                            </p>
+                        </div>                                     
+                    </div>
+                    <div class="validadores-html">
+                        <div class="validador">
+                            <p>Validador index.html</p>
+                            <img src="/Imagenes/Validaciones/validacionIndexHtml.png" alt="Validacion Index">
+                        </div>
+                        <div class="validador">
+                            <p>Validador contacto.html</p>
+                            <img src="/Imagenes/Validaciones/validacionIContactoHtml.png" alt="Validacion Index">
+                        </div>
+                        <div class="validador">
+                            <p>Validador noticias.html</p>
+                            <img src="/Imagenes/Validaciones/validacionNoticiasHtml.png" alt="Validacion Index">
+                        </div>
+                        <div class="validador">
+                            <p>Validador podcast.html</p>
+                            <img src="/Imagenes/Validaciones/validacionPodcastHtml.png" alt="Validacion Index">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-column footer-column-center">                
+                <div class="imagenes">                    
+                    <a href="https://www.facebook.com/MundoChampionsUMH" target="_blank">
+                        <img src="/Imagenes/logoFacebook.png" alt="Logo Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/radio_umh/" target="_blank">
+                        <img src="/Imagenes/logoInstagram.png" alt="Logo Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/JS/funcionalidades.js"></script>
+</body>
+</html>

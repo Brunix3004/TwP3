@@ -1,0 +1,89 @@
+.info h3{
+   margin-top: 5px;
+} 
+
+footer p {
+   margin-top: 30px;
+   margin-left: 10px;
+   text-align: center;  
+}
+
+ .titulo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px; 
+ }
+
+.contenedor {
+   display: flex;
+   align-items: flex-start;
+} 
+.infoh2{
+    text-align: center;
+}
+
+.elementos {
+   width: 95%;
+   padding-left: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 0;
+ }
+
+.caja {
+   display: flex;
+   width: 100%;
+   border: 1px black solid;
+   border-radius: 0px 20px 20px 0px;
+   padding: 0;
+ }
+
+.info{
+   width: 75%;
+   margin-left: 10px;
+   padding: 0;
+}
+
+.imagen {
+   width: 25%;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.imagen img {
+   width: 65%;
+}
+
+.caja:nth-child(1) {
+   background-color: #ffccab;
+}
+
+.caja:nth-child(2) {
+   background-color: #a8d2d4;
+}
+
+.caja:nth-child(3) {
+   background-color: #f3b2db;
+}
+
+.caja:nth-child(4) {
+   background-color: #efe6ab;
+}
+
+.caja:nth-child(5) {
+   background-color: #d6a7e4;
+}
+
+.caja:nth-child(6) {
+   background-color: #bae1fa;
+}
+
+.caja:nth-child(7) {
+   background-color: #ffb7b0;
+}
+
+.caja:nth-child(8) {
+   background-color: #cde4bd;
+}

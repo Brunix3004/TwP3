@@ -1,0 +1,176 @@
+@media only screen and (max-width: 480px) {
+    body{
+        margin: 0 auto;
+    }
+    /* 1 columna el layout */
+    .body {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    /* Header */
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+     }
+    .header-column {
+        display: none;
+    }
+    .header-column-left {
+        text-align: center;
+    }
+    /* Eliminacion de infografia */
+    .infografia {
+        display: none;
+    }
+    /* Menu horitzontal */
+    .navegador{
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        border: none;
+    }
+   
+    .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;        
+    }
+
+    .menu li{
+        padding: 10;
+        margin: 0 auto;        
+    }
+
+    .menu a{
+        color: black;
+    }
+
+    .menu li:hover .submenu {
+        display: none;
+    }
+    /* Eliminacion de las columnas en el footer */
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .validaciones {
+        display: none;
+    }
+    .footer-column {
+        padding: 5px;
+    }
+    .footer-column-center{
+        display: none;
+    }
+    /* INDEX */
+    .contenido {
+        max-width: 95%;
+    }
+    .apartado-noticias {
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 15px;        
+    }
+
+    .notice {
+        width: 60%;
+        margin: 0 auto;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    /* NOTICIAS */
+    .noticia {
+        height: 15em;
+    }
+
+    .noticia-header{
+        height: 7.5em;
+    }
+
+    .titulo-noticia{
+        font-size: 1.1em;
+    }
+    .subtitulo {
+        font-size: 0.95em;
+    }
+    .fecha, .autor-noticia, .ambito {
+        font-size: 0.75em;
+    }
+    .noticia-escondida {
+        display: block;
+    }
+
+    /* PARTE CONTACTO */
+
+    .formulario {
+        width: 90%;
+    }
+    .sedes{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* PARTE PODCAST */
+    #ciencia h2, #actualidad h2{
+        font-size: 2.5em;
+    }
+    #actualidad {
+        margin: 15px;
+    }
+    .contenedor-podcasts {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .caja-podcast {
+        width: 95%;
+        height: 420px;        
+    }
+    .cabecera p{
+        font-size: 1.3em;
+    }
+    .titulo-podcast {
+        font-size: 1.5em;
+    }
+    .autores-podcast{
+        font-size: 1.15em;
+    }
+    .cuerpo {
+        margin-bottom: 25px;
+    }
+    .info-podcast{
+        height: 4.1em;        
+    }
+    .duracion {
+        font-size: 1.2em;
+    }
+    .popularidad {
+        font-size: 1.2em;
+    }
+    .material-symbols-outlined {
+        font-size: 2em;        
+    }
+    .ratio p{
+        font-size: 1em;        
+        display: flex;
+        align-items: center;
+    }
+    .reproductor{
+        margin-bottom: 20px;
+    }
+    .reproductor a{
+        font-size: 1.5em;
+    }
+    .reproductor img {
+        width: 30px;
+    }
+}
