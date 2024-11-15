@@ -353,15 +353,7 @@ a{
 
 .noticia-escondida {
     display: none;
-    background-image: url(/Imagenes/Noticias/fondo-escondido.jpeg); 
-}
-
-.noticia-escondida .cuerpo-noticia p {
-    color: white;
-}
-
-.noticia-escondida a {
-    color: white;
+    background-image: url(/Imagenes/Noticias/fondoNoticia.avif);
 }
 
 /* PARTE PODCAST */
