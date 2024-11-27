@@ -3,7 +3,7 @@ function buscador() {
     if (busqueda) {        
         window.open(`https://www.google.com/search?q=${encodeURIComponent(busqueda)}`, '_blank');
     }
-} 
+}
 
 function mostrarMensaje() {
     alert("Disponible solamente para premium");

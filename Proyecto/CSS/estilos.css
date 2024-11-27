@@ -3,13 +3,6 @@ body {
     margin: 0 auto;
 }
 
-.container {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-    gap: 10px;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -30,6 +23,13 @@ p{
 }
 a{
     text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 10px;
 }
 
 /* Cabecera */
